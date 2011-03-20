@@ -6,7 +6,7 @@
 
 Summary:	Web Toolkit
 Name:		wt
-Version:	3.1.6
+Version:	3.1.8
 Release:	1%{?dist}
 
 Url:		http://www.webtoolkit.eu/wt
@@ -112,6 +112,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sun Mar 20 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1.8-1
+- update to 3.1.8
+
 * Tue Nov 16 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1.6-1
 - update to 3.1.6
 
