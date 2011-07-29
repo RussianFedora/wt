@@ -6,8 +6,8 @@
 
 Summary:	Web Toolkit
 Name:		wt
-Version:	3.1.8
-Release:	1%{?dist}
+Version:	3.1.10
+Release:	1%{?dist}.R
 
 Url:		http://www.webtoolkit.eu/wt
 License:	GPLv2
@@ -112,6 +112,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Jul 29 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.10-1.R
+- update to 3.1.10
+
 * Sun Mar 20 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1.8-1
 - update to 3.1.8
 
