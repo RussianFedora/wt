@@ -7,7 +7,7 @@
 Summary:	Web Toolkit
 Name:		wt
 Version:	3.1.10
-Release:	1%{?dist}.R
+Release:	2%{?dist}.R
 
 Url:		http://www.webtoolkit.eu/wt
 License:	GPLv2
@@ -27,7 +27,9 @@ BuildRequires:	doxygen
 BuildRequires:	gd-devel
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig
-
+BuildRequires:  pango-devel
+BuildRequires:  libharu-devel
+BuildRequires:  GraphicsMagick-devel
 
 %description
 Wt is a C++ library and application server for developing and
@@ -112,6 +114,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Sep 21 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.10-2.R
+- Added more buildrequires and functionality
+
 * Fri Jul 29 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.10-1.R
 - update to 3.1.10
 
