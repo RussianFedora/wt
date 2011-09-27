@@ -6,8 +6,8 @@
 
 Summary:	Web Toolkit
 Name:		wt
-Version:	3.1.10
-Release:	2%{?dist}.R
+Version:	3.1.11
+Release:	1%{?dist}.R
 
 Url:		http://www.webtoolkit.eu/wt
 License:	GPLv2
@@ -18,7 +18,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 BuildRequires:	fcgi-devel
 BuildRequires:	xerces-c-devel
 BuildRequires:	openssl-devel
-BuildRequires:	boost-devel >= 1.34.1
+BuildRequires:	boost-devel >= 1.36
 BuildRequires:	mxml-devel >= 2.3
 BuildRequires:	postgresql-devel
 BuildRequires:	postgresql-libs
@@ -44,9 +44,6 @@ code.
 %package devel
 Summary:	Web Toolkit
 Group:		Development/Libraries
-Requires:	fcgi-devel openssl-devel xerces-c-devel
-Requires:	boost-devel >= 1.34.1
-Requires:	mxml-devel >= 2.3
 Requires:	%{name} = %{version}
 
 
@@ -114,6 +111,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Sep 27 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.11-1.R
+- update to 3.1.11
+
 * Wed Sep 21 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.10-2.R
 - Added more buildrequires and functionality
 
