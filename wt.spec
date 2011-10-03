@@ -4,29 +4,28 @@
 %define WTRUNUSER apache
 %define WTRUNGROUP apache
 
-Summary:	Web Toolkit
-Name:		wt
-Version:	3.1.11
-Release:	1%{?dist}.R
+Summary:    Web Toolkit
+Name:       wt
+Version:    3.1.11
+Release:    1%{?dist}.R
 
-Url:		http://www.webtoolkit.eu/wt
-License:	GPLv2
-Group:		Development/Libraries
-Source0:	http://citylan.dl.sourceforge.net/project/witty/wt/%{version}/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
+Url:        http://www.webtoolkit.eu/wt
+License:    GPLv2
+Group:      Development/Libraries
+Source0:    http://citylan.dl.sourceforge.net/project/witty/wt/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:	fcgi-devel
-BuildRequires:	xerces-c-devel
-BuildRequires:	openssl-devel
-BuildRequires:	boost-devel >= 1.36
-BuildRequires:	mxml-devel >= 2.3
-BuildRequires:	postgresql-devel
-BuildRequires:	postgresql-libs
-BuildRequires:	cmake
-BuildRequires:	doxygen
-BuildRequires:	gd-devel
-BuildRequires:	qt4-devel
-BuildRequires:	pkgconfig
+BuildRequires:  fcgi-devel
+BuildRequires:  xerces-c-devel
+BuildRequires:  openssl-devel
+BuildRequires:  boost-devel >= 1.36
+BuildRequires:  mxml-devel >= 2.3
+BuildRequires:  postgresql-devel
+BuildRequires:  postgresql-libs
+BuildRequires:  cmake
+BuildRequires:  doxygen
+BuildRequires:  gd-devel
+BuildRequires:  qt4-devel
+BuildRequires:  pkgconfig
 BuildRequires:  pango-devel
 BuildRequires:  libharu-devel
 BuildRequires:  GraphicsMagick-devel
@@ -34,7 +33,7 @@ BuildRequires:  GraphicsMagick-devel
 %description
 Wt is a C++ library and application server for developing and
 deploying web applications. The widget-centric API is inspired by
-existing C++ GUI APIs.	It offers complete abstraction of any
+existing C++ GUI APIs. It offers complete abstraction of any
 web-specific implementation details.  Most importantly, the entire
 application is written in only one compiled language (C++), from which
 the library generates the necessary HTML, Javascript, CGI, and AJAX
@@ -42,9 +41,9 @@ code.
 
 
 %package devel
-Summary:	Web Toolkit
-Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Summary:    Web Toolkit
+Group:      Development/Libraries
+Requires:   %{name} = %{version}
 
 
 %description devel
