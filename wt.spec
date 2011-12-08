@@ -92,7 +92,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS Changelog INSTALL LICENSE
+%doc README.md Changelog INSTALL LICENSE
 %{_libdir}/*.so.*
 %dir %{_sysconfdir}/%{name}
 %{_datadir}/%{name}
