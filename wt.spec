@@ -6,7 +6,7 @@
 
 Summary:    Web Toolkit
 Name:       wt
-Version:    3.1.11
+Version:    3.2.0
 Release:    1%{?dist}.R
 
 Url:        http://www.webtoolkit.eu/wt
@@ -59,9 +59,7 @@ developing extensions for %{name}.
 mkdir wt-build
 cd wt-build
 CFLAGS=$RPM_OPT_FLAGS CXXFLAGS="$RPM_OPT_FLAGS" \
-cmake .. \
-    -DCMAKE_INSTALL_PREFIX="/usr" \
-    -DLIB_INSTALL_DIR=%{_lib} \
+%{cmake} .. \
     -DCONNECTOR_HTTP=ON \
     -DCONNECTOR_FCGI=ON \
     -DWEBGROUP="%{WTRUNGROUP}" -DWEBUSER="%{WTRUNUSER}" \
@@ -110,6 +108,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Dec 08 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.2.0-1.R
+- update to 3.2.0
+
 * Tue Sep 27 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.1.11-1.R
 - update to 3.1.11
 
