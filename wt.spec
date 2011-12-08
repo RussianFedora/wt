@@ -58,7 +58,7 @@ developing extensions for %{name}.
 %build
 mkdir wt-build
 cd wt-build
-CFLAGS=$RPM_OPT_FLAGS CXXFLAGS="$RPM_OPT_FLAGS" \
+
 %{cmake} .. \
     -DCONNECTOR_HTTP=ON \
     -DCONNECTOR_FCGI=ON \
@@ -79,6 +79,8 @@ mv -v %{buildroot}/%{_datadir}/Wt %{buildroot}/%{_datadir}/wt
 # We mustn't package .orig files
 find %{buildroot}/%{_includedir}/Wt -name '*.orig' -delete
 
+mv %{buildroot}/usr/usr/share/cmake %{buildroot}/usr/share/cmake
+
 
 %clean
 rm -rf %{buildroot}
@@ -92,7 +94,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README.md Changelog INSTALL LICENSE
+%doc README.md Changelog LICENSE
 %{_libdir}/*.so.*
 %dir %{_sysconfdir}/%{name}
 %{_datadir}/%{name}
@@ -104,7 +106,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_includedir}/Wt
 %{_libdir}/*.so
-%{_datadir}/cmake*/Modules/*
+%{_datadir}/cmake/Modules/*
 
 
 %changelog
