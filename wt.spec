@@ -7,7 +7,7 @@
 Summary:    Web Toolkit
 Name:       wt
 Version:    3.2.0
-Release:    1%{?dist}.R
+Release:    1%{?dist}
 
 Url:        http://www.webtoolkit.eu/wt
 License:    GPLv2
