@@ -6,7 +6,7 @@
 
 Summary:    Web Toolkit
 Name:       wt
-Version:    3.2.0
+Version:    3.2.1
 Release:    1%{?dist}
 
 Url:        http://www.webtoolkit.eu/wt
@@ -17,7 +17,7 @@ Source0:    http://citylan.dl.sourceforge.net/project/witty/wt/%{version}/%{name
 BuildRequires:  fcgi-devel
 BuildRequires:  xerces-c-devel
 BuildRequires:  openssl-devel
-BuildRequires:  boost-devel >= 1.36
+BuildRequires:  boost-devel >= 1.41
 BuildRequires:  mxml-devel >= 2.3
 BuildRequires:  postgresql-devel
 BuildRequires:  postgresql-libs
@@ -110,6 +110,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Mar 30 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 3.2.1-1.R
+- update to 3.2.1
+
 * Thu Dec 08 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 3.2.0-1.R
 - update to 3.2.0
 
